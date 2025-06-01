@@ -1,0 +1,36 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: mcp-server
+
+# MCP Server Configuration
+  ai:
+    mcp:
+      session:
+        required: false
+      server:
+        name: student-management-server
+        version: 0.0.1
+        type: sync
+        stdio: false
+        sse-message-endpoint: /mcp/message
+        resource-change-notification: true
+        tool-change-notification: true
+        prompt-change-notification: true
+        base-url:
+        sse-endpoint: /sse
+        enabled: true
+        capabilities:
+          tool: true
+
+
+server:
+  port: 8082
+
+log:
+
+logging:
+  level:
+    org.springframework.ai: trace
+    org.springframework.web: trace

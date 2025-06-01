@@ -1,0 +1,4 @@
+# pip3 install -r requirements.txt
+aiohttp>=3.8.0
+asyncio-mqtt>=0.11.0
+sseclient-py>=1.7.2

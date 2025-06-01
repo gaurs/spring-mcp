@@ -1,0 +1,6 @@
+@session-id=e7285b95-3ea9-4331-adda-878a31331852
+
+### GET_SESSION
+GET http://localhost:8081/sse
+
+
